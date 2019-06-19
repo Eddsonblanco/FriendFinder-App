@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>GamerFriend Finder</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
   <script src="https://kit.fontawesome.com/9e07168050.js"></script>
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  
+  <style>
+        body{
+          
+          background:url(https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80);
+          background-size: cover;
+          background-attachment: fixed;
+        }
+        .container{
+          background: rgba(255, 255, 255, 0.527);
+        }
+    </style>
 </head>
 <body>
-
-  <div class="container">
-
-    <div class="jumbotron">
-      <h1 class="text-center"><span class="fa fa-gamepad" aria-hidden="true"></span> Gamer Friend Finder</h1>
+  <div class="container mt-5">
+    <div class="mt-5 p-5">
+      <h1 class="text-center mt-4 "><span class="fa fa-gamepad" aria-hidden="true"></span> Gamer Friend Finder</h1>
       <hr>
       <h2 class="text-center">Match your new Gamer Friend</h2>
       <br>
 
-      <div class="text-center">
+      <div class="text-center mt-5">
         <a href="/survey"><button class="btn btn-lg btn-success"><span class="fa fa-list-alt"></span> Go to Survey</button></a>
       </div>
 
     </div>
 
-    <footer class="footer">
-      <div class="container">
+    <footer class="footer mt-5">
+      <div class="container text-center">
         <p><a href="/api/friends" target="blank">API Friends List</a> | <a class="fa fa-github"  href="https://github.com/Eddsonblanco/FriendFinder-App" target="blank">GitHub Repo</a>  
       </div>
     </footer>

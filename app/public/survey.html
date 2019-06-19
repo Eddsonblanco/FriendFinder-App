@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Friend Finder</title>
-</head>
-<body>
-    <div class="container">
-        <h2>Survey Questions</h2>
-    <hr>
 
-    <h3><strong>About You</strong></h3>
-    <h4>Name (Required)</h4>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+      body{
+        
+        background:url(https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80);
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .container{
+        background: rgba(255, 255, 255, 0.527);
+      }
+  </style>
+  <title>Friend Finder</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Survey Questions</h2>
+    <hr class="">
+
+    <h3 class="mt-5"><strong>About You</strong></h3>
+    <h4 class="mt-3">Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
 
-    <h4>Link to Photo Image (Required)</h4>
+    <h4 class="mt-3">Link to Photo Image (Required)</h4>
     <input type="text" id="photo" class="form-control" required>
 
     <hr>
 
-    <h3><strong>Question 1</strong></h3>
-    <h4>You would spend all day playing video games if you could. </h4>
+    <h3 class="mt-4"><strong>Question 1</strong></h3>
+    <h4 class="mt-2">You would spend all day playing video games if you could. </h4>
     <select class="chosen-select" id="q1">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -32,8 +46,8 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 2</strong></h3>
-    <h4>Your favorite video games are RPG.</h4>
+    <h3 class="mt-4"><strong>Question 2</strong></h3>
+    <h4 class="mt-2">Your favorite video games are RPG.</h4>
     <select class="chosen-select" id="q2">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -44,8 +58,8 @@
     </select>
 
 
-    <h3><strong>Question 3</strong></h3>
-    <h4>You get easily upset if you lose.</h4>
+    <h3 class="mt-4"><strong>Question 3</strong></h3>
+    <h4 class="mt-2">You get easily upset if you lose.</h4>
     <select class="chosen-select" id="q3">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -56,8 +70,8 @@
     </select>
 
 
-    <h3><strong>Question 4</strong></h3>
-    <h4>You prefer playing cooperative instead of solo.</h4>
+    <h3 class="mt-4"><strong>Question 4</strong></h3>
+    <h4 class="mt-2">You prefer playing cooperative instead of solo.</h4>
     <select class="chosen-select" id="q4">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -68,8 +82,8 @@
     </select>
 
 
-    <h3><strong>Question 5</strong></h3>
-    <h4>You met most of your friends online through video games.</h4>
+    <h3 class="mt-4"><strong>Question 5</strong></h3>
+    <h4 class="mt-2">You met most of your friends online through video games.</h4>
     <select class="chosen-select" id="q5">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -80,8 +94,8 @@
     </select>
 
 
-    <h3><strong>Question 6</strong></h3>
-    <h4>You blame others when your team is losing.</h4>
+    <h3 class="mt-4"><strong>Question 6</strong></h3>
+    <h4 class="mt-2">You blame others when your team is losing.</h4>
     <select class="chosen-select" id="q6">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -92,8 +106,8 @@
     </select>
 
 
-    <h3><strong>Question 7</strong></h3>
-    <h4>You spend way too much money on video games. </h4>
+    <h3 class="mt-4"><strong>Question 7</strong></h3>
+    <h4 class="mt-2">You spend way too much money on video games. </h4>
     <select class="chosen-select" id="q7">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -103,8 +117,8 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 8</strong></h3>
-    <h4>You like Campaign games.</h4>
+    <h3 class="mt-4"><strong>Question 8</strong></h3>
+    <h4 class="mt-2">You like Campaign games.</h4>
     <select class="chosen-select" id="q8">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -114,8 +128,8 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 9</strong></h3>
-    <h4>Play Station is better than Xbox.</h4>
+    <h3 class="mt-4"<strong>Question 9</strong></h3>
+    <h4 class="mt-2">Play Station is better than Xbox.</h4>
     <select class="chosen-select" id="q9">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -125,8 +139,8 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 10</strong></h3>
-    <h4>Your partner gets annoyed when you play.</h4>
+    <h3 class="mt-4"><strong>Question 10</strong></h3>
+    <h4 class="mt-2">Your partner gets annoyed when you play.</h4>
     <select class="chosen-select" id="q10">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -134,100 +148,81 @@
       <option value="3">3</option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
-    </select>
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
-
+    </select >
+    <button type="submit" class="btn btn-primary btn-lg btn-block mt-5 p-2 col-2 " id="submit"><i class="fa fa-check-circle"
+        aria-hidden="true"></i>
+      Submit</button>
     <hr>
-    </div>
-    <script type="text/javascript">
-        // Chosen CSS
-        var config = {
-          ".chosen-select": {},
-          ".chosen-select-deselect": {
-            allow_single_deselect: true
-          },
-          ".chosen-select-no-single": {
-            disable_search_threshold: 10
-          },
-          ".chosen-select-no-results": {
-            no_results_text: "Oops, nothing found!"
-          },
-          ".chosen-select-width": {
-            width: "95%"
-          }
-        };
-    
-        for (var selector in config) {
-          $(selector).chosen(config[selector]);
-        }
-    
-        // Capture the form inputs
-        $("#submit").on("click", function(event) {
-          event.preventDefault();
-    
-          // Form validation
-          function validateForm() {
-            var isValid = true;
-            $(".form-control").each(function() {
-              if ($(this).val() === "") {
-                isValid = false;
-              }
-            });
-    
-            $(".chosen-select").each(function() {
-    
-              if ($(this).val() === "") {
-                isValid = false;
-              }
-            });
-            return isValid;
-          }
-    
-          // If all required fields are filled
-          if (validateForm()) {
-            // Create an object for the user"s data
-            var userData = {
-              name: $("#name").val(),
-              photo: $("#photo").val(),
-              scores: [
-                $("#q1").val(),
-                $("#q2").val(),
-                $("#q3").val(),
-                $("#q4").val(),
-                $("#q5").val(),
-                $("#q6").val(),
-                $("#q7").val(),
-                $("#q8").val(),
-                $("#q9").val(),
-                $("#q10").val()
-              ]
-              
-            };
-            console.log(userData)
-    
-            // AJAX post the data to the friends API.
-            $.post("/api/friends", userData, function(data) {
-    
-              // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-              $("#match-name").text(data.name);
-              $("#match-img").attr("src", data.photo);
-    
-              // Show the modal with the best match
-              $("#results-modal").modal("toggle");
-    
-            });
-          } else {
-            alert("Please fill out all fields before submitting!");
-          }
-        });
-      </script>
+  </div>
 
-    
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
+<script type="text/javascript">
+console.log("working")
+  $("#submit").on("click", function (event) {
+    event.preventDefault();
+    //verify that user has entered all necessary information
+    var complete = true;
+
+    if ($("#name").val() === "" || $("#photo").val() === "") {
+      complete = false
+    } else if ($("#q1").val() === "empty" || $("#q2").val() === "empty" || $("#q3").val() === "empty" || $("#q4").val() === "empty" || $("#q5").val() === "empty" || $("#q6").val() === "empty" || $("#q7").val() === "empty" || $("#q8").val() === "empty" || $("#q9").val() === "empty" || $("#q10").val() === "empty") {
+      complete = false;
+    }
+
+    if (complete === true) {
+      var newFriend = {
+        name: $("#name").val().trim(),
+        photoURL: $("#photo").val().trim(),
+        answers: [
+          $("#q1").val(),
+          $("#q2").val(),
+          $("#q3").val(),
+          $("#q4").val(),
+          $("#q5").val(),
+          $("#q6").val(),
+          $("#q7").val(),
+          $("#q8").val(),
+          $("#q9").val(),
+          $("#q10").val()
+        ]
+      };
+      console.log(newFriend);
+
+      $.post("/api/friends", newFriend, function (data) {
+        $("#friend").text(data.name);
+        $("#friendPhoto").attr("src", data.photoURL);
+        $("#newFriendModal").modal("toggle");
+      });
+
+
+      $("#name").val("");
+      $("#photo").val("");
+      $("#q2").val("");
+      $("#q1").val("");
+      $("#q3").val("");
+      $("#q4").val("");
+      $("#q5").val("");
+      $("#q6").val("");
+      $("#q7").val("");
+      $("#q8").val("");
+      $("#q9").val("");
+      $("#q10").val("");
+    }
+    else {
+      // If a required field is missing, show alert
+      alert("Please fill out all fields!");
+    }
+  })
+
+</script>
